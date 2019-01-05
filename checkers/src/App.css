@@ -28,3 +28,10 @@
   height:600px;
   border:1px solid yellow;
 }
+
+.flex-grid
+{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}

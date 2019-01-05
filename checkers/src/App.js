@@ -18,33 +18,34 @@ class App extends Component {
 function Board(props)
 {
   return(
-    <div className={"flex-container"}>
-        <div className={"odd-square"}/>
-        <div className={"even-square"}/>
-        <div className={"odd-square"}/>
-        <div className={"even-square"}/>
-        <div className={"odd-square"}/>
-        <div className={"even-square"}/>
-        <div className={"odd-square"}/>
-        <div className={"even-square"}/>
-        <div className={"odd-square"}/>
-        <div className={"even-square"}/>
-        <div className={"odd-square"}/>
-        <div className={"even-square"}/>
-        <div className={"odd-square"}/>
-        <div className={"even-square"}/>
-        <div className={"odd-square"}/>
-        <div className={"even-square"}/>
-        <div className={"odd-square"}/>
-        <div className={"even-square"}/>
-        <div className={"odd-square"}/>
-        <div className={"even-square"}/>
-        <div className={"odd-square"}/>
-        <div className={"even-square"}/>
-        <div className={"odd-square"}/>
-        <div className={"even-square"}/>
-        <div className={"odd-square"}/>
-
+    <div className={"flex-grid"}>
+      <div className={"flex-container"}>
+          <div className={"odd-square"}/>
+          <div className={"even-square"}/>
+          <div className={"odd-square"}/>
+          <div className={"even-square"}/>
+          <div className={"odd-square"}/>
+          <div className={"even-square"}/>
+          <div className={"odd-square"}/>
+          <div className={"even-square"}/>
+          <div className={"odd-square"}/>
+          <div className={"even-square"}/>
+          <div className={"odd-square"}/>
+          <div className={"even-square"}/>
+          <div className={"odd-square"}/>
+          <div className={"even-square"}/>
+          <div className={"odd-square"}/>
+          <div className={"even-square"}/>
+          <div className={"odd-square"}/>
+          <div className={"even-square"}/>
+          <div className={"odd-square"}/>
+          <div className={"even-square"}/>
+          <div className={"odd-square"}/>
+          <div className={"even-square"}/>
+          <div className={"odd-square"}/>
+          <div className={"even-square"}/>
+          <div className={"odd-square"}/>
+      </div>
     </div>
 
 );
