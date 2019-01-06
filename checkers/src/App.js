@@ -20,6 +20,56 @@ function Board(props)
   return(
     <div className={"flex-grid"}>
       <div className={"flex-container"}>
+      <div className={"odd-square"}>
+
+      </div>
+      <div className={"even-square"}>
+      <span className={"dot"}></span>
+      </div>
+      <div className={"odd-square"}>
+
+      </div>
+      <div className={"even-square"}>
+        <span className={"dot"}></span>
+      </div>
+      <div className={"odd-square"}>
+
+      </div>
+      <div className={"even-square"}>
+        <span className={"dot"}></span>
+      </div>
+      <div className={"odd-square"}>
+
+      </div>
+      <div className={"even-square"}>
+      <span className={"dot"}></span>
+      </div>
+
+      <div className={"even-square"}>
+      <span className={"dot"}></span>
+      </div>
+      <div className={"odd-square"}>
+
+      </div>
+      <div className={"even-square"}>
+        <span className={"dot"}></span>
+      </div>
+      <div className={"odd-square"}>
+
+      </div>
+      <div className={"even-square"}>
+        <span className={"dot"}></span>
+      </div>
+      <div className={"odd-square"}>
+
+      </div>
+      <div className={"even-square"}>
+      <span className={"dot"}></span>
+      </div>
+      <div className={"odd-square"}>
+
+      </div>
+
           <div className={"odd-square"}/>
           <div className={"even-square"}/>
           <div className={"odd-square"}/>
@@ -28,7 +78,7 @@ function Board(props)
           <div className={"even-square"}/>
           <div className={"odd-square"}/>
           <div className={"even-square"}/>
-          <div className={"odd-square"}/>
+
           <div className={"even-square"}/>
           <div className={"odd-square"}/>
           <div className={"even-square"}/>
@@ -37,6 +87,16 @@ function Board(props)
           <div className={"odd-square"}/>
           <div className={"even-square"}/>
           <div className={"odd-square"}/>
+
+          <div className={"odd-square"}/>
+          <div className={"even-square"}/>
+          <div className={"odd-square"}/>
+          <div className={"even-square"}/>
+          <div className={"odd-square"}/>
+          <div className={"even-square"}/>
+          <div className={"odd-square"}/>
+          <div className={"even-square"}/>
+
           <div className={"even-square"}/>
           <div className={"odd-square"}/>
           <div className={"even-square"}/>
@@ -45,6 +105,57 @@ function Board(props)
           <div className={"odd-square"}/>
           <div className={"even-square"}/>
           <div className={"odd-square"}/>
+
+          <div className={"odd-square"}>
+              <span className={"edot"}></span>
+          </div>
+          <div className={"even-square"}>
+
+          </div>
+          <div className={"odd-square"}>
+              <span className={"edot"}></span>
+          </div>
+          <div className={"even-square"}>
+
+          </div>
+          <div className={"odd-square"}>
+                <span className={"edot"}></span>
+          </div>
+          <div className={"even-square"}>
+
+          </div>
+          <div className={"odd-square"}>
+                <span className={"edot"}></span>
+          </div>
+          <div className={"even-square"}>
+
+          </div>
+
+          <div className={"even-square"}>
+
+          </div>
+          <div className={"odd-square"}>
+                <span className={"edot"}></span>
+          </div>
+          <div className={"even-square"}>
+
+          </div>
+          <div className={"odd-square"}>
+                <span className={"edot"}></span>
+          </div>
+          <div className={"even-square"}>
+
+          </div>
+          <div className={"odd-square"}>
+                <span className={"edot"}></span>
+          </div>
+          <div className={"even-square"}>
+
+          </div>
+          <div className={"odd-square"}>
+                <span className={"edot"}></span>
+          </div>
+
       </div>
     </div>
 

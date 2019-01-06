@@ -3,16 +3,21 @@
 .odd-square
 {
   background-color:black;
-  height:20%;
-  width:20%;
+  height:12.5%;
+  width:12.5%;
 
 }
 
 .even-square
 {
+  display:flex;
+  align-content:center;
+  flex-direction:center;
+  align-items:center;
+  align-self:center;
   background-color:red;
-  height:20%;
-  width:20%;
+  height:12.5%;
+  width:12.5%;
 
 }
 
@@ -26,7 +31,7 @@
   justify-content:flex-start;
   width:600px;
   height:600px;
-  border:1px solid yellow;
+  border:1px solid grey;
 }
 
 .flex-grid
@@ -34,4 +39,25 @@
   display:flex;
   align-items:center;
   justify-content:center;
+}
+
+.dot {
+  height:75%;
+  width: 75%;
+  background-color: black;
+  border:0.5px solid white;
+  border-radius: 50%;
+  margin-left:8px;
+  display: inline-block;
+}
+
+.edot {
+  height:75%;
+  width: 75%;
+  margin-top:10px;
+  background-color: red;
+  border:0.5px solid white;
+  border-radius: 50%;
+  margin-left:8px;
+  display: inline-block;
 }
