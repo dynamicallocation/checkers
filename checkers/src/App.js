@@ -3,7 +3,7 @@ import logo from './logo.svg';
 import './App.css';
 import { Container, Row, Col } from 'react-grid-system';
 
-class App extends Component {
+class App extends React.Component {
   render() {
     return (
 
@@ -15,151 +15,51 @@ class App extends Component {
 }
 
 
-function Board(props)
+
+
+class Board extends React.Component
 {
-  return(
-    <div className={"flex-grid"}>
-      <div className={"flex-container"}>
-      <div className={"odd-square"}>
-            <span className={"dot"}></span>
-      </div>
-      <div className={"even-square"}>
 
-      </div>
-      <div className={"odd-square"}>
-            <span className={"dot"}></span>
-      </div>
-      <div className={"even-square"}>
+  renderSquare = (i) => <Square num={i}/>
 
-      </div>
-      <div className={"odd-square"}>
-        <span className={"dot"}></span>
-      </div>
-      <div className={"even-square"}>
-
-      </div>
-      <div className={"odd-square"}>
-            <span className={"dot"}></span>
-      </div>
-      <div className={"even-square"}>
-
-      </div>
-
-      <div className={"even-square"}>
-
-      </div>
-      <div className={"odd-square"}>
-            <span className={"dot"}></span>
-      </div>
-      <div className={"even-square"}>
-
-      </div>
-      <div className={"odd-square"}>
-          <span className={"dot"}></span>
-      </div>
-      <div className={"even-square"}>
-
-      </div>
-      <div className={"odd-square"}>
-            <span className={"dot"}></span>
-      </div>
-      <div className={"even-square"}>
-
-      </div>
-      <div className={"odd-square"}>
-              <span className={"dot"}></span>
-      </div>
-
-          <div className={"odd-square"}/>
-          <div className={"even-square"}/>
-          <div className={"odd-square"}/>
-          <div className={"even-square"}/>
-          <div className={"odd-square"}/>
-          <div className={"even-square"}/>
-          <div className={"odd-square"}/>
-          <div className={"even-square"}/>
-
-          <div className={"even-square"}/>
-          <div className={"odd-square"}/>
-          <div className={"even-square"}/>
-          <div className={"odd-square"}/>
-          <div className={"even-square"}/>
-          <div className={"odd-square"}/>
-          <div className={"even-square"}/>
-          <div className={"odd-square"}/>
-
-          <div className={"odd-square"}/>
-          <div className={"even-square"}/>
-          <div className={"odd-square"}/>
-          <div className={"even-square"}/>
-          <div className={"odd-square"}/>
-          <div className={"even-square"}/>
-          <div className={"odd-square"}/>
-          <div className={"even-square"}/>
-
-          <div className={"even-square"}/>
-          <div className={"odd-square"}/>
-          <div className={"even-square"}/>
-          <div className={"odd-square"}/>
-          <div className={"even-square"}/>
-          <div className={"odd-square"}/>
-          <div className={"even-square"}/>
-          <div className={"odd-square"}/>
-
-          <div className={"odd-square"}>
-              <span className={"edot"}></span>
+  render(){
+      return(
+        <div className={"flex-grid"}>
+          <div className={"flex-container"}>
+              <Square />
           </div>
-          <div className={"even-square"}>
+        </div>
 
-          </div>
-          <div className={"odd-square"}>
-              <span className={"edot"}></span>
-          </div>
-          <div className={"even-square"}>
+    );
+  }
+}
 
-          </div>
-          <div className={"odd-square"}>
-                <span className={"edot"}></span>
-          </div>
-          <div className={"even-square"}>
+class Square extends React.Component
+{
 
-          </div>
-          <div className={"odd-square"}>
-                <span className={"edot"}></span>
-          </div>
-          <div className={"even-square"}>
+    constructor(props)
+    {
+      super(props);
+      this.state = {hasPiece: false}
+    }
 
-          </div>
 
-          <div className={"even-square"}>
 
-          </div>
-          <div className={"odd-square"}>
-                <span className={"edot"}></span>
-          </div>
-          <div className={"even-square"}>
+    render()
+    {
 
-          </div>
-          <div className={"odd-square"}>
-                <span className={"edot"}></span>
-          </div>
-          <div className={"even-square"}>
+        return(
+          <button className="square" onClick={ () => this.setState({hasPiece:true})}>
+              {this.state.hasPiece ? <div></div : null}
+          </button>
+      );
+    }
+}
 
-          </div>
-          <div className={"odd-square"}>
-                <span className={"edot"}></span>
-          </div>
-          <div className={"even-square"}>
 
-          </div>
-          <div className={"odd-square"}>
-                <span className={"edot"}></span>
-          </div>
-
-      </div>
-    </div>
-
-);
+function dot(props)
+{
+  return <div className="edot"></div>
 }
 
 
